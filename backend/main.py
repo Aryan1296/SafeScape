@@ -1028,32 +1028,3 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     debug_mode = os.environ.get('FLASK_ENV') != 'production'
     app.run(host='0.0.0.0', port=port, debug=debug_mode)
-    from flask import Flask, render_template, jsonify
-
-app = Flask(__name__, static_folder="static", template_folder="templates")
-
-@app.route('/')
-def home():
-    # Serve your frontend index page
-    return render_template('index.html')
-
-@app.errorhandler(404)
-def not_found(e):
-    return jsonify({"error": "Endpoint not found"}), 404
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=10000)
-   from flask import Flask, render_template, jsonify
-
-app = Flask(__name__, static_folder="../static", template_folder="../templates")
-
-@app.route('/')
-def home():
-    return render_template('index.html')
-
-@app.errorhandler(404)
-def not_found(e):
-    return jsonify({"error": "Endpoint not found"}), 404
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=10000)
