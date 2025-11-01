@@ -1,7 +1,6 @@
 services:
   - type: web
-    name: safescape
+    name: SafeScape-2
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn backend.main:app
-    plan: free
