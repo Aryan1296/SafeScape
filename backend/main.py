@@ -273,7 +273,8 @@ def calculate_area_safety_score(latitude: float, longitude: float, radius_km: fl
 # Routes
 @app.route('/')
 def home():
-    return send_from_directory('../templates', 'index.html')
+    return send_from_directory('templates', 'index.html')
+
 
 @app.route('/api')
 def api_info():
