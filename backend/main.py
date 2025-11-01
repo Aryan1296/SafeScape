@@ -1,4 +1,23 @@
-from flask import Flask, request, jsonify, send_from_directory
+
+from flask import Flask, render_template, jsonify, send_from_directory
+import os
+
+app = Flask(__name__, static_folder='static', template_folder='templates')
+
+# ✅ Root route for Render + local testing
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+# ✅ Serve static files properly (CSS, JS, Images)
+@app.route('/static/<path:path>')
+def serve_static(path):
+    return send_from_directory(os.path.join(app.root_path, 'static'), path)
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
