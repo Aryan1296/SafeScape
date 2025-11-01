@@ -3,7 +3,7 @@
 SafeScape is a next-generation travel safety and emergency response web app built to ensure secure journeys for everyone — especially solo female travelers and explorers in unfamiliar places.
 It empowers users to report unsafe incidents, locate emergency services, and trigger SOS alerts instantly, all through an interactive real-time safety map.
 
-🔗 Live App: https://safescape.onrender.com
+🔗 Live App: https://safescape.onrender.com/
 
 👨‍💻 Developed by: Aryan Tripathi
 
@@ -175,4 +175,4 @@ See the LICENSE
 
 “Empowering safety through smart, open-source innovation.”
 
-🔗 Live App: https://safescape.onrender.com
+🔗 Live App: https://safescape.onrender.com/
