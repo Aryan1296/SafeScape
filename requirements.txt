@@ -10,3 +10,4 @@ sendgrid
 pymongo
 pytz
 python-json-logger
+flask==3.0.3
